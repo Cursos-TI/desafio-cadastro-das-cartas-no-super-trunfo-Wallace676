@@ -44,7 +44,7 @@ int main()
 
   // Calcula o PIB per capita da carta 1 (reais/habitante)
   // Fórmula: PIB per capita = PIB / população
-  pib_percapita = pib / populacao;
+  pib_percapita = (pib * 1e9) / (double)populacao;
 
   // Imprime as informações cadastradas na carta 1
   printf(" \nCarta 1\n");
@@ -53,7 +53,7 @@ int main()
   printf(" Nome da Cidade: %s\n", cidade);
   printf(" População: %d\n", populacao);
   printf(" Área: %.2f km²\n", area);
-  printf(" PIB: %.6f\n", pib);
+  printf(" PIB: %.2f bilhões de reais\n", pib);
   printf(" Numero de Pontos Turísticos: %d\n", numero_pontos_turisticos);
   printf(" Densidade Populacional: %.2f hab/km²\n", densidade_populacional);
   printf(" PIB per capita: %.2f\n", pib_percapita);
@@ -82,13 +82,12 @@ int main()
   printf(" Informe o Numero de pontos Turísticos: ");
   scanf("%d", &numero_pontos_turisticos);
 
-  // Calcula o PIB per capita da carta 1 (reais/habitante)
-  // Fórmula: PIB per capita = PIB total / população
+  // Calcula a densidade populacional da carta 2
   densidade_populacional = (float)populacao / area;
 
-  // Calcula o PIB per capita da carta  (reais/habitante)
-  // Fórmula: PIB per capita = PIB / população
-  pib_percapita = pib / populacao;
+  // multiplica o PIB em bilhões por 1e9 para converter em reais,
+  // depois divide pelo número de habitantes (convertido para double)
+  pib_percapita = (pib * 1e9) / (double)populacao;
 
   // imprime as informações cadastradas na carta 2
   printf(" \nCarta 2\n");
@@ -97,7 +96,7 @@ int main()
   printf(" Nome da Cidade: %s\n", cidade);
   printf(" População: %d\n", populacao);
   printf(" Área: %.2f km²\n", area);
-  printf(" PIB: %.2f\n", pib);
+  printf(" PIB: %.2f bilhões de reais\n", pib);
   printf(" Numero de Pontos Turísticos: %d\n", numero_pontos_turisticos);
   printf(" Densidade Populacional: %.2f hab/km²\n", densidade_populacional);
   printf(" PIB per capita: %.2f reais\n", pib_percapita);
