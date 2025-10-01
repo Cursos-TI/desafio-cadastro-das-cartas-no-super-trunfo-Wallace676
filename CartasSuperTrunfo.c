@@ -15,7 +15,7 @@ int main()
   double pib_percapita;
   int numero_pontos_turisticos;
 
-  // ==== Cadastro da carta 1 ====;
+  //==== Cadastro da carta 1 ====;
   printf("\nPreencha a Carta 1\n");
 
   printf(" Informe o Estado: ");
@@ -58,7 +58,7 @@ int main()
   printf(" Densidade Populacional: %.2f hab/km²\n", densidade_populacional);
   printf(" PIB per capita: %.2f\n", pib_percapita);
 
-  // ==== Cadastro da carta 2 ====
+  //==== Cadastro da carta 2 ====
   printf("\nPreencha a Carta 2\n");
 
   printf(" Informe o Estado: ");
