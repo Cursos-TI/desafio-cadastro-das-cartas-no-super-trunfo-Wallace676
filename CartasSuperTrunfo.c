@@ -42,8 +42,8 @@ int main()
   // Calcula a densidade populacional da carta 1
   densidade_populacional = (float)populacao / area;
 
-  // Calcula o PIB per capita da carta 1 (reais/habitante)
-  // Fórmula: PIB per capita = PIB / população
+  // multiplica o PIB em bilhões por 1e9 para converter em reais,
+  // depois divide pelo número de habitantes (convertido para double)
   pib_percapita = (pib * 1e9) / (double)populacao;
 
   // Imprime as informações cadastradas na carta 1
