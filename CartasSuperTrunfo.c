@@ -8,7 +8,7 @@ int main()
   char estado[50];
   char codigo[10];
   char cidade[50];
-  int populacao;
+  unsingned long int populacao;
   float area;
   double pib;
   float densidade_populacional;
@@ -28,7 +28,7 @@ int main()
   scanf(" %[^\n]", cidade);
 
   printf(" Informe População: ");
-  scanf("%d", &populacao);
+  scanf("%lu", &populacao);
 
   printf(" Informe a Área: ");
   scanf("%f", &area);
@@ -57,6 +57,7 @@ int main()
   printf(" Numero de Pontos Turísticos: %d\n", numero_pontos_turisticos);
   printf(" Densidade Populacional: %.2f hab/km²\n", densidade_populacional);
   printf(" PIB per capita: %.2f\n", pib_percapita);
+  printf(" Super poder: carta %d venceu %d");
 
   //==== Cadastro da carta 2 ====
   printf("\nPreencha a Carta 2\n");
@@ -71,7 +72,7 @@ int main()
   scanf(" %[^\n]", cidade);
 
   printf(" Informe a População: ");
-  scanf("%d", &populacao);
+  scanf("%lu", &populacao);
 
   printf(" Informe a Área: ");
   scanf("%f", &area);
@@ -100,6 +101,7 @@ int main()
   printf(" Numero de Pontos Turísticos: %d\n", numero_pontos_turisticos);
   printf(" Densidade Populacional: %.2f hab/km²\n", densidade_populacional);
   printf(" PIB per capita: %.2f reais\n", pib_percapita);
+  printf(" Super poder: carta %d venceu %d");
 
   return 0; // Encerra o programa
 }
