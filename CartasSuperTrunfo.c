@@ -53,7 +53,7 @@ int main()
   scanf(" %[^\n]", estadoC2);
 
   printf(" Informe o Código: ");
-  scanf("%s", codigoC2);
+  scanf(" %s", codigoC2);
 
   printf(" Informe a Cidade: ");
   scanf(" %[^\n]", cidadeC2);
@@ -90,9 +90,9 @@ int main()
   printf(" PIB per capita: %.2f\n", pib_percapitaC1);
 
   // Atribui valor ao super poder somando todas as outras funções e converte para float na carta 1
-  super_poderC1 = (float)populacaoC1 + areaC1 + pibC1 + numero_pontos_turisticosC1 + (1 / densidade_populacionalC1);
+  super_poderC1 = (float)populacaoC1 + areaC1 + pibC1 + numero_pontos_turisticosC1 + pib_percapitaC1 + (1 / densidade_populacionalC1);
 
-  printf(" Super poder: carta %.2f\n", super_poderC1);
+  printf(" Super poder: carta 1 %.2f\n", super_poderC1);
 
   // imprime as informações cadastradas na carta 2
   printf(" \nCarta 2\n");
@@ -107,7 +107,7 @@ int main()
   printf(" PIB per capita: %.2f reais\n", pib_percapitaC2);
 
  // Atribui valor ao super poder somando todas as outras funções e converte para float na carta 2
-  super_poderC2 = (float)populacaoC2 + areaC2 + pibC2 + numero_pontos_turisticosC2 + (1 / densidade_populacionalC2);
+  super_poderC2 = (float)populacaoC2 + areaC2 + pibC2 + numero_pontos_turisticosC2 + pib_percapitaC2 + (1 / densidade_populacionalC2);
 
 // Imprime a informação do super poder da carta 2
   printf(" Super poder: %.2f\n", super_poderC2);
