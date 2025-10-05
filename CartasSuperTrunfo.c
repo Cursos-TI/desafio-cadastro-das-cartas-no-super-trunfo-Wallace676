@@ -111,7 +111,7 @@ int main()
 
   // Imprime a informação do super poder da carta 2
   printf(" Super poder: %.2f\n", super_poderC2);
-  
+
 
   //Faz a comparação da população entra a carta 1 x carta2
   if (populacaoC1 > populacaoC2){
@@ -157,7 +157,7 @@ int main()
 
   // Faz a comparação do super poder da carta 1 x carta 2
   if (super_poderC1 > super_poderC2){
-    printf(" A carta 1 Venceu");
+    printf(" A carta 1 Venceu \n");
   }else{
     printf(" A carta 2 Venceu \n");
   }
